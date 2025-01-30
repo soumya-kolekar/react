@@ -9,10 +9,15 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "client": "npm --prefix client start",       
+    "client-build": "npm --prefix client run build", 
+    "client-deploy": "npm --prefix client run deploy", 
+    "server": "npm --prefix server start",       
+    "server-build": "npm --prefix server run build", 
+    "server-deploy": "npm --prefix server run deploy", 
+    "deploy": "vercel --prod"
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
-  },
-  "homepage": "https://soumya-kolekar.github.io/react"
+     "vercel": "^3.0.0"
+  }
 }
