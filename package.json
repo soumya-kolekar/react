@@ -18,6 +18,6 @@
     "deploy": "vercel --prod"
   },
   "devDependencies": {
-     "vercel": "^3.0.0"
+     "vercel": "^2.0.0"
   }
 }
